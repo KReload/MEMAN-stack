@@ -1,0 +1,26 @@
+version: '3'
+services:
+  angular:
+    container_name: angular
+    build: ./angular
+    ports:
+      - '4200:4200'
+  express:
+    container_name: express
+    build: ./express
+    ports:
+      - '3000:3000'
+    links:
+      - mongo
+      - mosquitto
+  mongo:
+    container_name: mongo
+    image: mongo:latest
+    ports:
+      - '27017:27017'
+  mosquitto:
+    container_name: mosquitto
+    image: toke/mosquitto
+    ports:
+      - "1883:1883"
+      - "9001:9001"
