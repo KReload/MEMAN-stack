@@ -1,6 +1,12 @@
 # MEMAN-stack
 A stack for IoT usage
 
-## Getting started
+## Production deploy
 
-1. Install [docker] https://docs.docker.com/install/
+- Install [docker](https://docs.docker.com/install/)
+
+- If you have a Linux system install [compose](https://docs.docker.com/compose/install/)
+
+- Run the application
+
+`docker-compose up --build`
