@@ -1,6 +1,11 @@
 # MEMAN-stack
 A stack for IoT usage
 
+## Prerequisites
+
+- Git [Download link](https://git-scm.com/downloads) 
+- NodeJS [Download link](https://nodejs.org/en/download/)
+
 ## Production deploy
 
 - Install [docker](https://docs.docker.com/install/)
@@ -15,6 +20,6 @@ A stack for IoT usage
   mqttbroker: 'MQTT BROKER HOSTNAME'
 };`
 
-- Run the application
+- Run the application in the project folder
 
 `docker-compose up --build`
