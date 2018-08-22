@@ -6,6 +6,11 @@ A stack for IoT usage
 - Git [Download link](https://git-scm.com/downloads) 
 - NodeJS [Download link](https://nodejs.org/en/download/)
 
+## Clone the repository
+
+In a terminal
+`git clone https://github.com/KReload/MEMAN-stack.git`
+
 ## Production deploy
 
 - Install [docker](https://docs.docker.com/install/)
