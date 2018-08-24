@@ -8,13 +8,14 @@ import { environment } from "../environments/environment";
 export class MqttSubscriberService {
 
   constructor(private httpClient:HttpClient){ }
-  baseUrl = environment.baseUrl;
+  baseUrl = environment.apiHost;
 
   getMessage() {
-    return this.httpClient.get(this.baseUrl);
+    return this.httpClient.get('http://'+ this.baseUrl +'/api');
   }
+
   getTopics() {
-    return this.httpClient.get(this.baseUrl + '/topics');
+    return this.httpClient.get('http://'+ this.baseUrl + '/api/topics');
   }
 
   subscribe(){}

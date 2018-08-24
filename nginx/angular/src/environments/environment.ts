@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'http://192.168.99.100:3000',
-  host: '192.168.99.100'
+  apiHost: 'localhost',
+  mqttBrokerHost: 'localhost'
 };
 
 /*
