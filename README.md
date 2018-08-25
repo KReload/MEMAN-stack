@@ -1,5 +1,6 @@
 # MEMAN-stack
-A stack for IoT usage
+
+  MEMAN Stack is an IoT technology stack. It has a Mosquitto broker for MQTT communication, a Mongodb for storing data, an Express API and an Angular 6 application. With it, you can subscribe to the MQTT broker and display the data on your Angular application. It is still in work in progress. Services need to be improved and I will soon provide ssl support.
 
 ## Prerequisites
 
@@ -17,13 +18,15 @@ In a terminal
 
 - If you have a Linux system install [compose](https://docs.docker.com/compose/install/)
 
-- In /nginx/angular/src/environments/environment.prod.ts specify the API hostname and the MQTT Broker hostname
+- If you are using docker tools with windows, fill /nginx/angular/src/environments/environment.prod.ts with the API hostname and the MQTT Broker hostname. The IP adress can be found when launching the docker quickstart terminal. (Usually 192.168.99.100)
 
 `export const environment = {
   production: true,
-  apiUrl: 'API HOSTNAME',
-  mqttbroker: 'MQTT BROKER HOSTNAME'
+  apiUrl: '192.168.99.100',
+  mqttbroker: '192.168.99.100'
 };`
+
+For online deployment, don't use windows 10 (or use Pro version) because it will run on a virtual machine.
 
 - Run the application in the project folder
 
