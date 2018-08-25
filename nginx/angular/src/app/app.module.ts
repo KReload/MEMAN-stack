@@ -11,8 +11,8 @@ import {
 import { environment } from "../environments/environment";
 
 export const MQTT_SERVICE_OPTIONS: IMqttServiceOptions = {
-  hostname: environment.host,
-  port: 9001,
+  hostname: environment.mqttBrokerHost,
+  port: 80,
   path: '/mqtt'
 };
 

@@ -34,12 +34,12 @@ var MqttTopic = mongoose.model('MqttTopic', mqttSchema);
 // const User = mongoose.model('User', userSchema);
 
 // /* GET api listing. */
-router.get('/', (req, res) => {
+router.get('/api', (req, res) => {
     res.send({'message':'api works'});
 });
 
 // /* GET all users. */
-router.get('/topics', (req, res) => {
+router.get('/api/topics', (req, res) => {
     MqttTopic.find({}, (err, topics) =>{
         res.status(200).json(topics);
     })
