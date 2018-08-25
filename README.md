@@ -1,6 +1,8 @@
 # MEMAN-stack
 
   MEMAN Stack is an IoT technology stack. It has a Mosquitto broker for MQTT communication, a Mongodb for storing data, an Express API and an Angular 6 application. With it, you can subscribe to the MQTT broker and display the data on your Angular application. It is still in work in progress. Services need to be improved and I will soon provide ssl support.
+  
+  Deploy this stack with docker
 
 ## Prerequisites
 
